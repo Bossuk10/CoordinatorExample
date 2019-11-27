@@ -8,13 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		27D95C7D234E34AD00709CAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D95C7C234E34AD00709CAB /* AppDelegate.swift */; };
-		27D95C7F234E34AD00709CAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D95C7E234E34AD00709CAB /* SceneDelegate.swift */; };
-		27D95C81234E34AD00709CAB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D95C80234E34AD00709CAB /* ContentView.swift */; };
 		27D95C83234E34AF00709CAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27D95C82234E34AF00709CAB /* Assets.xcassets */; };
 		27D95C86234E34AF00709CAB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27D95C85234E34AF00709CAB /* Preview Assets.xcassets */; };
 		27D95C89234E34AF00709CAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27D95C87234E34AF00709CAB /* LaunchScreen.storyboard */; };
 		27D95C94234E34B000709CAB /* CoordinatorsDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D95C93234E34B000709CAB /* CoordinatorsDemoTests.swift */; };
 		27D95C9F234E34B000709CAB /* CoordinatorsDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D95C9E234E34B000709CAB /* CoordinatorsDemoUITests.swift */; };
+		27D95CB1234E364F00709CAB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D95CAF234E364F00709CAB /* LoginViewController.swift */; };
+		27D95CB2234E364F00709CAB /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27D95CB0234E364F00709CAB /* LoginViewController.xib */; };
+		27D95CB4234E367D00709CAB /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D95CB3234E367D00709CAB /* LoginViewModel.swift */; };
+		27D95CB6234E36A200709CAB /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D95CB5234E36A200709CAB /* LoginCoordinator.swift */; };
+		27D95CB8234E36BB00709CAB /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D95CB7234E36BB00709CAB /* MainCoordinator.swift */; };
+		27D95CBA234E397900709CAB /* ViewControllersFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D95CB9234E397900709CAB /* ViewControllersFactory.swift */; };
+		27D95CBC234E3AC100709CAB /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D95CBB234E3AC100709CAB /* BaseCoordinator.swift */; };
+		27D95CBE234E449900709CAB /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D95CBD234E449900709CAB /* AuthManager.swift */; };
+		27D95CC1234E580E00709CAB /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D95CBF234E580E00709CAB /* MapViewController.swift */; };
+		27D95CC2234E580E00709CAB /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27D95CC0234E580E00709CAB /* MapViewController.xib */; };
+		27D95CC4234E58CD00709CAB /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D95CC3234E58CD00709CAB /* MapViewModel.swift */; };
+		27D95CC6234F320700709CAB /* MapCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D95CC5234F320700709CAB /* MapCoordinator.swift */; };
+		27D95CC9234F332100709CAB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D95CC7234F332100709CAB /* ProfileViewController.swift */; };
+		27D95CCA234F332100709CAB /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27D95CC8234F332100709CAB /* ProfileViewController.xib */; };
+		27D95CCC234F349C00709CAB /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D95CCB234F349C00709CAB /* ProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +50,6 @@
 /* Begin PBXFileReference section */
 		27D95C79234E34AD00709CAB /* CoordinatorsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoordinatorsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27D95C7C234E34AD00709CAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		27D95C7E234E34AD00709CAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		27D95C80234E34AD00709CAB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		27D95C82234E34AF00709CAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27D95C85234E34AF00709CAB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		27D95C88234E34AF00709CAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +60,21 @@
 		27D95C9A234E34B000709CAB /* CoordinatorsDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoordinatorsDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27D95C9E234E34B000709CAB /* CoordinatorsDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorsDemoUITests.swift; sourceTree = "<group>"; };
 		27D95CA0234E34B000709CAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27D95CAF234E364F00709CAB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		27D95CB0234E364F00709CAB /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		27D95CB3234E367D00709CAB /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		27D95CB5234E36A200709CAB /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginCoordinator.swift; path = CoordinatorsDemo/ViewModels/LoginCoordinator.swift; sourceTree = SOURCE_ROOT; };
+		27D95CB7234E36BB00709CAB /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainCoordinator.swift; path = CoordinatorsDemo/ViewModels/MainCoordinator.swift; sourceTree = SOURCE_ROOT; };
+		27D95CB9234E397900709CAB /* ViewControllersFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllersFactory.swift; sourceTree = "<group>"; };
+		27D95CBB234E3AC100709CAB /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BaseCoordinator.swift; path = CoordinatorsDemo/BaseCoordinator.swift; sourceTree = SOURCE_ROOT; };
+		27D95CBD234E449900709CAB /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		27D95CBF234E580E00709CAB /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		27D95CC0234E580E00709CAB /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		27D95CC3234E58CD00709CAB /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		27D95CC5234F320700709CAB /* MapCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapCoordinator.swift; path = CoordinatorsDemo/ViewModels/MapCoordinator.swift; sourceTree = SOURCE_ROOT; };
+		27D95CC7234F332100709CAB /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		27D95CC8234F332100709CAB /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		27D95CCB234F349C00709CAB /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +125,16 @@
 		27D95C7B234E34AD00709CAB /* CoordinatorsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				27D95CAE234E35CB00709CAB /* ViewControllers */,
+				27D95CAD234E35C200709CAB /* ViewModels */,
+				27D95CAC234E35B300709CAB /* Coordinators  */,
 				27D95C7C234E34AD00709CAB /* AppDelegate.swift */,
-				27D95C7E234E34AD00709CAB /* SceneDelegate.swift */,
-				27D95C80234E34AD00709CAB /* ContentView.swift */,
+				27D95CB9234E397900709CAB /* ViewControllersFactory.swift */,
 				27D95C82234E34AF00709CAB /* Assets.xcassets */,
 				27D95C87234E34AF00709CAB /* LaunchScreen.storyboard */,
 				27D95C8A234E34AF00709CAB /* Info.plist */,
 				27D95C84234E34AF00709CAB /* Preview Content */,
+				27D95CBD234E449900709CAB /* AuthManager.swift */,
 			);
 			path = CoordinatorsDemo;
 			sourceTree = "<group>";
@@ -134,6 +163,40 @@
 				27D95CA0234E34B000709CAB /* Info.plist */,
 			);
 			path = CoordinatorsDemoUITests;
+			sourceTree = "<group>";
+		};
+		27D95CAC234E35B300709CAB /* Coordinators  */ = {
+			isa = PBXGroup;
+			children = (
+				27D95CB5234E36A200709CAB /* LoginCoordinator.swift */,
+				27D95CB7234E36BB00709CAB /* MainCoordinator.swift */,
+				27D95CBB234E3AC100709CAB /* BaseCoordinator.swift */,
+				27D95CC5234F320700709CAB /* MapCoordinator.swift */,
+			);
+			path = "Coordinators ";
+			sourceTree = "<group>";
+		};
+		27D95CAD234E35C200709CAB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				27D95CB3234E367D00709CAB /* LoginViewModel.swift */,
+				27D95CC3234E58CD00709CAB /* MapViewModel.swift */,
+				27D95CCB234F349C00709CAB /* ProfileViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		27D95CAE234E35CB00709CAB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				27D95CAF234E364F00709CAB /* LoginViewController.swift */,
+				27D95CB0234E364F00709CAB /* LoginViewController.xib */,
+				27D95CBF234E580E00709CAB /* MapViewController.swift */,
+				27D95CC0234E580E00709CAB /* MapViewController.xib */,
+				27D95CC7234F332100709CAB /* ProfileViewController.swift */,
+				27D95CC8234F332100709CAB /* ProfileViewController.xib */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,8 +303,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27D95CCA234F332100709CAB /* ProfileViewController.xib in Resources */,
+				27D95CB2234E364F00709CAB /* LoginViewController.xib in Resources */,
 				27D95C89234E34AF00709CAB /* LaunchScreen.storyboard in Resources */,
 				27D95C86234E34AF00709CAB /* Preview Assets.xcassets in Resources */,
+				27D95CC2234E580E00709CAB /* MapViewController.xib in Resources */,
 				27D95C83234E34AF00709CAB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,9 +333,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27D95CBA234E397900709CAB /* ViewControllersFactory.swift in Sources */,
+				27D95CC4234E58CD00709CAB /* MapViewModel.swift in Sources */,
+				27D95CC6234F320700709CAB /* MapCoordinator.swift in Sources */,
+				27D95CBE234E449900709CAB /* AuthManager.swift in Sources */,
+				27D95CB1234E364F00709CAB /* LoginViewController.swift in Sources */,
 				27D95C7D234E34AD00709CAB /* AppDelegate.swift in Sources */,
-				27D95C7F234E34AD00709CAB /* SceneDelegate.swift in Sources */,
-				27D95C81234E34AD00709CAB /* ContentView.swift in Sources */,
+				27D95CC9234F332100709CAB /* ProfileViewController.swift in Sources */,
+				27D95CC1234E580E00709CAB /* MapViewController.swift in Sources */,
+				27D95CB6234E36A200709CAB /* LoginCoordinator.swift in Sources */,
+				27D95CBC234E3AC100709CAB /* BaseCoordinator.swift in Sources */,
+				27D95CCC234F349C00709CAB /* ProfileViewModel.swift in Sources */,
+				27D95CB8234E36BB00709CAB /* MainCoordinator.swift in Sources */,
+				27D95CB4234E367D00709CAB /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +514,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CoordinatorsDemo/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CoordinatorsDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,6 +534,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CoordinatorsDemo/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CoordinatorsDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
